@@ -2,6 +2,9 @@ import streamlit as st
 import pandas as pd
 from serpapi import GoogleSearch
 
+st.set_page_config(page_title="SERP Comparator", page_icon="https://cdn-icons-png.flaticon.com/256/270/270014.png")
+
+
 # Function to retrieve SERP results
 def fetch_serp_results(keyword, hl, num_results, device, gl, api_key):
     params = {
